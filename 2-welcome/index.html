@@ -30,13 +30,7 @@
     <![endif]-->
     <style type="text/css">
       @media only screen and (max-width: 600px) {
-        p,
-        ul li,
-        ol li,
-        a {
-          font-size: 16px !important;
-          line-height: 150% !important;
-        }
+
 
         h2 {
           font-size: 22px !important;
@@ -60,17 +54,6 @@
         .logo {
           width: 140px !important;
           height: 24px !important;
-        }
-
-        .content-left,
-        .content-right {
-          width: 100% !important;
-        }
-
-        .content table,
-        .content {
-          width: 100% !important;
-          max-width: 600px !important;
         }
 
         .adaptive-img {
@@ -151,7 +134,16 @@
       -ms-text-size-adjust: 100%;
     "
   >
-    <div style="background-color: #ffffff">
+    <div
+      style="
+        -ms-text-size-adjust: 100%;
+        -webkit-font-smoothing: subpixel-antialiased;
+        -webkit-text-size-adjust: 100%;
+        background-color: #ffffff;
+        table-layout: fixed;
+        text-align: center;
+      "
+    >
       <!--[if gte mso 9]>
         <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
           <v:fill type="tile" color="#ffffff;"></v:fill>
@@ -164,6 +156,12 @@
         cellpadding="0"
         border="0"
         align="center"
+        style="
+          border-collapse: collapse;
+          margin: 0 auto;
+          max-width: 600px;
+          width: 100%;
+        "
       >
         <tr>
           <td>
@@ -203,7 +201,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 58px;
                             padding-bottom: 24px;
                           "
@@ -246,7 +244,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 14px;
                             padding-bottom: 14px;
                             padding-left: 37px;
@@ -408,104 +406,139 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #0b379b;
-                            width: 600px;
+                            width: 100%;
                             padding: 32px;
                             margin-bottom: 24px;
                             color: #ffffff;
                           "
                         >
                           <tr>
-                            <td>
-                              <table
-                                class="content-left"
-                                align="left"
-                                cellpadding="0"
-                                cellspacing="0"
-                                style="width: 360px"
+                            <td
+                              class="two-columns"
+                              style="
+                                -webkit-font-smoothing: subpixel-antialiased;
+                                font-size: 0;
+                                padding: 0;
+                                text-align: center;
+                              "
+                            >
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
+
+                                  max-width: 360px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td>
-                                    <h2
-                                      style="
-                                        margin-top: 0;
-                                        margin-right: 0;
-                                        margin-left: 0;
-                                        margin-bottom: 24px;
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                <table
+                                  width="100%"
+                                  align="left"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td>
+                                      <h2
+                                        style="
+                                          margin-top: 0;
+                                          margin-right: 0;
+                                          margin-left: 0;
+                                          margin-bottom: 24px;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        color: #13d6c3;
-                                      "
-                                    >
-                                      <b>Здравствуйте, {{name}}</b>
-                                    </h2>
-                                    <p
-                                      style="
-                                        margin-top: 0;
-                                        margin-right: 0;
-                                        margin-left: 0;
-                                        margin-bottom: 24px;
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                          color: #13d6c3;
+                                        "
+                                      >
+                                        <b>Здравствуйте, {{name}}</b>
+                                      </h2>
+                                      <p
+                                        style="
+                                          margin-top: 0;
+                                          margin-right: 0;
+                                          margin-left: 0;
+                                          margin-bottom: 24px;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        color: #ffffff;
-                                      "
-                                    >
-                                      Благодарим вас за&nbsp;регистрацию
-                                      на&nbsp;курс &laquo;Начальный
-                                      html+css&raquo;.
-                                    </p>
-                                    <p
-                                      style="
-                                        margin: 0;
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                          color: #ffffff;
+                                        "
+                                      >
+                                        Благодарим вас за&nbsp;регистрацию
+                                        на&nbsp;курс &laquo;Начальный
+                                        html+css&raquo;.
+                                      </p>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        color: #ffffff;
-                                      "
-                                    >
-                                      Курс стартует 1&nbsp;июля в&nbsp;17.00
-                                      по&nbsp;московскому времени. Письма
-                                      со&nbsp;ссылками для входа в&nbsp;кабинет
-                                      придут на&nbsp;указанную почту за день
-                                      до&nbsp;старта курса.
-                                    </p>
-                                  </td>
-                                </tr>
-                              </table>
-                              <table
-                                class="content-right"
-                                align="right"
-                                cellpadding="0"
-                                cellspacing="0"
+                                          color: #ffffff;
+                                        "
+                                      >
+                                        Курс стартует 1&nbsp;июля в&nbsp;17.00
+                                        по&nbsp;московскому времени. Письма
+                                        со&nbsp;ссылками для входа
+                                        в&nbsp;кабинет придут на&nbsp;указанную
+                                        почту за день до&nbsp;старта курса.
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
+
+                                  max-width: 175px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td>
-                                    <img
-                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/promo@2x.png"
-                                      alt="Человек с ноутбуком"
-                                      width="175"
-                                      height="269"
-                                      border="0"
-                                    />
-                                  </td>
-                                </tr>
-                              </table>
+                                <table
+                                  width="100%"
+                                  align="right"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td>
+                                      <img
+                                        src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/promo@2x.png"
+                                        alt="Человек с ноутбуком"
+                                        width="175"
+                                        height="269"
+                                        border="0"
+                                      />
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                             </td>
                           </tr>
                         </table>
@@ -534,7 +567,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 24px;
                           "
                         >
@@ -692,7 +725,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                           "
                         >
                           <tr>
@@ -748,7 +781,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 48px;
                             padding-left: 32px;
                             padding-right: 32px;
@@ -756,186 +789,228 @@
                           "
                         >
                           <tr>
-                            <td>
+                            <td
+                              class="two-columns"
+                              style="
+                                -webkit-font-smoothing: subpixel-antialiased;
+                                font-size: 0;
+                                padding: 0;
+                                text-align: center;
+                              "
+                            >
                               <!-- pic -->
-                              <table
-                                class="content-left"
-                                align="left"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                                style="width: 177px"
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
+
+                                  max-width: 177px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <!-- pic -->
-                                <tr>
-                                  <td align="center">
-                                    <img
-                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user1@2x.png"
-                                      alt="Антон Громов Фронтенд-разработчик в Cats Development"
-                                      width="88"
-                                      height="88"
-                                      border="0"
-                                      style="margin-bottom: 12px"
-                                    />
-                                  </td>
-                                </tr>
-                                <!-- text -->
-                                <tr>
-                                  <td align="center">
-                                    <h3
-                                      style="
-                                        margin: 0;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                <table
+                                  width="100%"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="border-collapse: collapse"
+                                >
+                                  <!-- pic -->
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user1@2x.png"
+                                        alt="Антон Громов Фронтенд-разработчик в Cats Development"
+                                        width="88"
+                                        height="88"
+                                        border="0"
+                                        style="margin-bottom: 12px"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <!-- text -->
+                                  <tr>
+                                    <td align="center">
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      <b>Антон Громов</b>
-                                    </h3>
-                                    <p
-                                      style="
-                                        margin: 0;
-                                        margin-bottom: 30px;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        <b>Антон Громов</b>
+                                      </h3>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          margin-bottom: 30px;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      Фронтенд-<br />разработчик в&nbsp;Cats
-                                      Development
-                                    </p>
-                                  </td>
-                                </tr>
-                              </table>
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        Фронтенд-<br />разработчик в&nbsp;Cats
+                                        Development
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
 
-                              <table
-                                class="content-left"
-                                align="left"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                                style="width: 177px"
+                                  max-width: 177px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td align="center">
-                                    <img
-                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user2@2x.png"
-                                      alt="Илья Раменский Team Lead в Lizard Software"
-                                      width="88"
-                                      height="88"
-                                      border="0"
-                                      style="margin-bottom: 12px"
-                                    />
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td align="center">
-                                    <h3
-                                      style="
-                                        margin: 0;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                <table
+                                  width="100%"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user2@2x.png"
+                                        alt="Илья Раменский Team Lead в Lizard Software"
+                                        width="88"
+                                        height="88"
+                                        border="0"
+                                        style="margin-bottom: 12px"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      <b>Илья Раменский </b>
-                                    </h3>
-                                    <p
-                                      style="
-                                        margin: 0;
-                                        margin-bottom: 30px;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        <b>Илья Раменский </b>
+                                      </h3>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          margin-bottom: 30px;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      Team Lead в&nbsp;Lizard Software
-                                    </p>
-                                  </td>
-                                </tr>
-                              </table>
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        Team Lead в&nbsp;Lizard Software
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
 
-                              <table
-                                class="content-right"
-                                align="right"
-                                cellpadding="0"
-                                cellspacing="0"
-                                border="0"
-                                style="width: 177px"
+                                  max-width: 177px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td align="center">
-                                    <img
-                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user3@2x.png"
-                                      alt="Игнатий Чубаров Преподаватель IT в РУИТ"
-                                      width="88"
-                                      height="88"
-                                      border="0"
-                                      style="margin-bottom: 12px"
-                                    />
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td align="center">
-                                    <h3
-                                      style="
-                                        margin: 0;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                <table
+                                  width="100%"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  border="0"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td align="center">
+                                      <img
+                                        src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/2-welcome/img/user3@2x.png"
+                                        alt="Игнатий Чубаров Преподаватель IT в РУИТ"
+                                        width="88"
+                                        height="88"
+                                        border="0"
+                                        style="margin-bottom: 12px"
+                                      />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td align="center">
+                                      <h3
+                                        style="
+                                          margin: 0;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      <b>Игнатий Чубаров</b>
-                                    </h3>
-                                    <p
-                                      style="
-                                        margin: 0;
-                                        -webkit-text-size-adjust: none;
-                                        -ms-text-size-adjust: none;
-                                        mso-line-height-rule: exactly;
-                                        font-family: 'trebuchet ms', tahoma,
-                                          sans-serif;
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        <b>Игнатий Чубаров</b>
+                                      </h3>
+                                      <p
+                                        style="
+                                          margin: 0;
+                                          -webkit-text-size-adjust: none;
+                                          -ms-text-size-adjust: none;
+                                          mso-line-height-rule: exactly;
+                                          font-family: 'trebuchet ms', tahoma,
+                                            sans-serif;
 
-                                        font-size: 18px;
-                                        line-height: 21px;
-                                        color: #000000;
-                                      "
-                                    >
-                                      Преподаватель IT&nbsp;в&nbsp;РУИТ
-                                    </p>
-                                  </td>
-                                </tr>
-                              </table>
+                                          font-size: 18px;
+                                          line-height: 21px;
+                                          color: #000000;
+                                        "
+                                      >
+                                        Преподаватель IT&nbsp;в&nbsp;РУИТ
+                                      </p>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                             </td>
                           </tr>
                         </table>
@@ -963,7 +1038,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 24px;
                             padding-left: 32px;
                             padding-right: 32px;
@@ -1019,7 +1094,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             padding-top: 24px;
                             padding-left: 32px;
                             padding-right: 32px;
@@ -1079,7 +1154,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                             margin-bottom: 32px;
                           "
                         >
@@ -1335,7 +1410,7 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 600px;
+                            width: 100%;
                           "
                         >
                           <tr>
@@ -1347,6 +1422,7 @@
                                 href="#"
                                 style="
                                   display: inline-block;
+                                  width: 176px;
                                   background: #ff4b33;
                                   border-radius: 5px;
                                   color: #ffffff;
@@ -1407,412 +1483,462 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 568px;
+                            width: 100%;
                             padding-bottom: 32px;
                             padding-top: 32px;
                             padding-left: 16px;
                             padding-right: 16px;
+                            border-top-left-radius: 15px;
+                            border-top-right-radius: 15px;
+                            overflow: hidden;
                           "
                         >
                           <tr>
-                            <td>
-                              <table
-                                class="content-left"
-                                cellpadding="0"
-                                cellspacing="0"
-                                align="left"
+                            <td
+                              class="two-columns"
+                              style="
+                                -webkit-font-smoothing: subpixel-antialiased;
+                                font-size: 0;
+                                padding: 0;
+
+                                text-align: center;
+                              "
+                            >
+                              <div
+                                class="column mobile-content-p0r"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
+                                  padding-right: 58px;
+                                  max-width: 220px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td>
-                                    <table
-                                      width="100%"
-                                      cellspacing="0"
-                                      cellpadding="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td>
-                                          <h3
-                                            style="
-                                              font-size: 18px;
-                                              line-height: 21px;
-                                              margin-top: 0;
-                                              margin-left: 0;
-                                              margin-right: 0;
-                                              margin-bottom: 23px;
+                                <table
+                                  width="100%"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  align="left"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td>
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                        border="0"
+                                      >
+                                        <tr>
+                                          <td>
+                                            <h3
+                                              style="
+                                                font-size: 18px;
+                                                line-height: 21px;
+                                                margin-top: 0;
+                                                margin-left: 0;
+                                                margin-right: 0;
+                                                margin-bottom: 23px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                          >
-                                            Мы&nbsp;в&nbsp;социальных сетях
-                                          </h3>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <!-- social icons -->
-                                          <table
-                                            width="200px"
-                                            cellspacing="0"
-                                            cellpadding="0"
-                                            border="0"
-                                          >
-                                            <tr>
-                                              <td>
-                                                <a
-                                                  title="facebook"
-                                                  target="_blank"
-                                                  href="#"
-                                                  style="
-                                                    display: block;
-                                                    margin-right: 8px;
-                                                  "
-                                                >
-                                                  <img
-                                                    class="adaptive-img"
-                                                    src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/facebook@2x.png"
-                                                    alt="facebook"
-                                                    width="24"
-                                                    height="24"
-                                                    border="0"
-                                                  />
-                                                </a>
-                                              </td>
-                                              <td>
-                                                <a
-                                                  title="instagram"
-                                                  target="_blank"
-                                                  href="#"
-                                                  style="
-                                                    display: block;
-                                                    margin-right: 8px;
-                                                  "
-                                                >
-                                                  <img
-                                                    class="adaptive-img"
-                                                    src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/inst@2x.png"
-                                                    alt="иконка instagram"
-                                                    width="24"
-                                                    height="24"
-                                                    border="0"
-                                                  />
-                                                </a>
-                                              </td>
-                                              <td>
-                                                <a
-                                                  title="youtube"
-                                                  target="_blank"
-                                                  href="#"
-                                                  style="
-                                                    display: block;
-                                                    margin-right: 8px;
-                                                  "
-                                                >
-                                                  <img
-                                                    class="adaptive-img"
-                                                    src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/youtube@2x.png"
-                                                    alt="иконка youtube"
-                                                    width="24"
-                                                    height="24"
-                                                    border="0"
-                                                  />
-                                                </a>
-                                              </td>
-                                              <td>
-                                                <a
-                                                  title="telegram"
-                                                  target="_blank"
-                                                  href="#"
-                                                  style="
-                                                    display: block;
-                                                    margin-right: 8px;
-                                                  "
-                                                >
-                                                  <img
-                                                    class="adaptive-img"
-                                                    src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/telegram@2x.png"
-                                                    alt="иконка telegram"
-                                                    width="24"
-                                                    height="24"
-                                                    border="0"
-                                                  />
-                                                </a>
-                                              </td>
-                                              <td>
-                                                <a
-                                                  title="vk"
-                                                  target="_blank"
-                                                  href="#"
-                                                  style="display: block"
-                                                >
-                                                  <img
-                                                    class="adaptive-img"
-                                                    src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/vk@2x.png"
-                                                    alt="иконка vk"
-                                                    width="24"
-                                                    height="24"
-                                                    border="0"
-                                                  />
-                                                </a>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </table>
-                                    <table
-                                      width="100%"
-                                      cellspacing="0"
-                                      cellpadding="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td>
-                                          <h3
-                                            style="
-                                              margin-top: 24px;
-                                              margin-bottom: 8px;
-                                              margin-left: 0;
-                                              margin-right: 0;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                            >
+                                              Мы&nbsp;в&nbsp;социальных сетях
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <!-- social icons -->
+                                            <table
+                                              width="200px"
+                                              cellspacing="0"
+                                              cellpadding="0"
+                                              border="0"
+                                              align="left"
+                                              style="width: 200px !important"
+                                            >
+                                              <tr>
+                                                <td>
+                                                  <a
+                                                    title="facebook"
+                                                    target="_blank"
+                                                    href="#"
+                                                    style="
+                                                      display: block;
+                                                      width: 24px;
+                                                      height: 24px;
+                                                    "
+                                                  >
+                                                    <img
+                                                      class="adaptive-img"
+                                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/facebook@2x.png"
+                                                      alt="facebook"
+                                                      width="24"
+                                                      height="24"
+                                                      border="0"
+                                                    />
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <a
+                                                    title="instagram"
+                                                    target="_blank"
+                                                    href="#"
+                                                    style="
+                                                      display: block;
+                                                      width: 24px;
+                                                      height: 24px;
+                                                    "
+                                                  >
+                                                    <img
+                                                      class="adaptive-img"
+                                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/inst@2x.png"
+                                                      alt="иконка instagram"
+                                                      width="24"
+                                                      height="24"
+                                                      border="0"
+                                                    />
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <a
+                                                    title="youtube"
+                                                    target="_blank"
+                                                    href="#"
+                                                    style="
+                                                      display: block;
+                                                      width: 24px;
+                                                      height: 24px;
+                                                    "
+                                                  >
+                                                    <img
+                                                      class="adaptive-img"
+                                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/youtube@2x.png"
+                                                      alt="иконка youtube"
+                                                      width="24"
+                                                      height="24"
+                                                      border="0"
+                                                    />
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <a
+                                                    title="telegram"
+                                                    target="_blank"
+                                                    href="#"
+                                                    style="
+                                                      display: block;
+                                                      width: 24px;
+                                                      height: 24px;
+                                                    "
+                                                  >
+                                                    <img
+                                                      class="adaptive-img"
+                                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/telegram@2x.png"
+                                                      alt="иконка telegram"
+                                                      width="24"
+                                                      height="24"
+                                                      border="0"
+                                                    />
+                                                  </a>
+                                                </td>
+                                                <td>
+                                                  <a
+                                                    title="vk"
+                                                    target="_blank"
+                                                    href="#"
+                                                    style="
+                                                      display: block;
+                                                      width: 24px;
+                                                      height: 24px;
+                                                    "
+                                                  >
+                                                    <img
+                                                      class="adaptive-img"
+                                                      src="https://raw.githubusercontent.com/vigolajnen/49149-play-html-1/master/1-invitation/img/social/vk@2x.png"
+                                                      alt="иконка vk"
+                                                      width="24"
+                                                      height="24"
+                                                      border="0"
+                                                    />
+                                                  </a>
+                                                </td>
+                                              </tr>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                        border="0"
+                                      >
+                                        <tr>
+                                          <td>
+                                            <h3
+                                              style="
+                                                margin-top: 24px;
+                                                margin-bottom: 8px;
+                                                margin-left: 0;
+                                                margin-right: 0;
 
-                                              font-size: 18px;
-                                              line-height: 21px;
+                                                font-size: 18px;
+                                                line-height: 21px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                          >
-                                            Свяжитесь с&nbsp;нами
-                                          </h3>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="study@htmlplay.com"
-                                            target="_blank"
-                                            href="mailto:study@htmlplay.com"
-                                            style="
-                                              display: inline-block;
-                                              text-decoration: none;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #13d6c3;
-                                              margin-top: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 0;
-                                              margin-bottom: 8px;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                            >
+                                              Свяжитесь с&nbsp;нами
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="study@htmlplay.com"
+                                              target="_blank"
+                                              href="mailto:study@htmlplay.com"
+                                              style="
+                                                display: inline-block;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #13d6c3;
+                                                margin-top: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 0;
+                                                margin-bottom: 8px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >study@htmlplay.com</a
-                                          >
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="8-800-690-76-68"
-                                            target="_blank"
-                                            href="tel:+78006907668"
-                                            style="
-                                              display: inline-block;
-                                              text-decoration: none;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #13d6c3;
-                                              margin: 0;
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >8-800-690-76-68</a
-                                          >
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
-                              <table
-                                class="content-right"
-                                cellpadding="0"
-                                cellspacing="0"
-                                align="right"
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >study@htmlplay.com</a
+                                            >
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="8-800-690-76-68"
+                                              target="_blank"
+                                              href="tel:+78006907668"
+                                              style="
+                                                display: inline-block;
+                                                text-decoration: none;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #13d6c3;
+                                                margin: 0;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >8-800-690-76-68</a
+                                            >
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div
+                                class="column"
+                                style="
+                                  -webkit-font-smoothing: subpixel-antialiased;
+                                  display: inline-block;
+
+                                  max-width: 240px;
+                                  text-align: left;
+                                  vertical-align: top;
+                                  width: 100%;
+                                "
                               >
-                                <tr>
-                                  <td>
-                                    <table
-                                      width="100%"
-                                      cellspacing="0"
-                                      cellpadding="0"
-                                      border="0"
-                                    >
-                                      <tr>
-                                        <td>
-                                          <h3
-                                            style="
-                                              font-size: 18px;
-                                              line-height: 21px;
-                                              margin-top: 0;
-                                              margin-right: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 16px;
+                                <table
+                                  width="100%"
+                                  cellpadding="0"
+                                  cellspacing="0"
+                                  align="right"
+                                  style="border-collapse: collapse"
+                                >
+                                  <tr>
+                                    <td>
+                                      <table
+                                        width="100%"
+                                        cellspacing="0"
+                                        cellpadding="0"
+                                        border="0"
+                                      >
+                                        <tr>
+                                          <td>
+                                            <h3
+                                              style="
+                                                font-size: 18px;
+                                                line-height: 21px;
+                                                margin-top: 0;
+                                                margin-right: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 16px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                          >
-                                            Полезные ссылки
-                                          </h3>
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="Бесплатные вебинары"
-                                            target="_blank"
-                                            href="#"
-                                            style="
-                                              display: inline-block;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #141414;
-                                              margin-top: 0;
-                                              margin-right: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 8px;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                            >
+                                              Полезные ссылки
+                                            </h3>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="Бесплатные вебинары"
+                                              target="_blank"
+                                              href="#"
+                                              style="
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #141414;
+                                                margin-top: 0;
+                                                margin-right: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 8px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >Бесплатные вебинары</a
-                                          >
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="Обучающие курсы"
-                                            target="_blank"
-                                            href="#"
-                                            style="
-                                              display: inline-block;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #141414;
-                                              margin-top: 0;
-                                              margin-right: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 8px;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >Бесплатные вебинары</a
+                                            >
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="Обучающие курсы"
+                                              target="_blank"
+                                              href="#"
+                                              style="
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #141414;
+                                                margin-top: 0;
+                                                margin-right: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 8px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >Обучающие курсы</a
-                                          >
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="Тесты"
-                                            target="_blank"
-                                            href="#"
-                                            style="
-                                              display: inline-block;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #141414;
-                                              margin-top: 0;
-                                              margin-right: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 8px;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >Обучающие курсы</a
+                                            >
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="Тесты"
+                                              target="_blank"
+                                              href="#"
+                                              style="
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #141414;
+                                                margin-top: 0;
+                                                margin-right: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 8px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >Тесты</a
-                                          >
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="Наш блог"
-                                            target="_blank"
-                                            href="#"
-                                            style="
-                                              display: inline-block;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #141414;
-                                              margin-top: 0;
-                                              margin-right: 0;
-                                              margin-left: 0;
-                                              margin-bottom: 8px;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >Тесты</a
+                                            >
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="Наш блог"
+                                              target="_blank"
+                                              href="#"
+                                              style="
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #141414;
+                                                margin-top: 0;
+                                                margin-right: 0;
+                                                margin-left: 0;
+                                                margin-bottom: 8px;
 
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            >Наш блог</a
-                                          >
-                                        </td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <a
-                                            title="Истории студентов"
-                                            style="
-                                              display: inline-block;
-                                              font-size: 14px;
-                                              line-height: 16px;
-                                              color: #141414;
-                                              margin: 0;
-                                              -webkit-text-size-adjust: none;
-                                              -ms-text-size-adjust: none;
-                                              mso-line-height-rule: exactly;
-                                              font-family: 'trebuchet ms',
-                                                tahoma, sans-serif;
-                                            "
-                                            target="_blank"
-                                            href="#"
-                                            >Истории студентов</a
-                                          >
-                                        </td>
-                                      </tr>
-                                    </table>
-                                  </td>
-                                </tr>
-                              </table>
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              >Наш блог</a
+                                            >
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>
+                                            <a
+                                              title="Истории студентов"
+                                              style="
+                                                display: inline-block;
+                                                font-size: 14px;
+                                                line-height: 16px;
+                                                color: #141414;
+                                                margin: 0;
+                                                -webkit-text-size-adjust: none;
+                                                -ms-text-size-adjust: none;
+                                                mso-line-height-rule: exactly;
+                                                font-family: 'trebuchet ms',
+                                                  tahoma, sans-serif;
+                                              "
+                                              target="_blank"
+                                              href="#"
+                                              >Истории студентов</a
+                                            >
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
                             </td>
                           </tr>
                         </table>
@@ -1840,14 +1966,14 @@
                             mso-table-rspace: 0pt;
                             border-spacing: 0px;
                             background-color: #ffffff;
-                            width: 568px;
+                            width: 100%;
                             padding-left: 16px;
                             padding-right: 16px;
                           "
                         >
                           <tr>
                             <td>
-                              <p
+                              <div
                                 style="
                                   margin: 0;
                                   padding-top: 15px;
@@ -1909,8 +2035,8 @@
                                   "
                                   >настроить параметры</a
                                 >.
-                              </p>
-                              <p
+                              </div>
+                              <div
                                 style="
                                   margin: 0;
                                   padding-top: 15px;
@@ -1949,7 +2075,7 @@
                                   "
                                   >жмите сюда</a
                                 >.
-                              </p>
+                              </div>
                             </td>
                           </tr>
                         </table>
